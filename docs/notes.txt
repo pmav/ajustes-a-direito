@@ -1,0 +1,29 @@
+0. Objeto do Contrato;
+1. Tipo de Procedimento;
+2. Tipo(s) de Contrato;
+3. CPVs;
+4. Entidade(s) Adjudicante(s);
+5. Entidade(s) Adjudicatária(s);
+6. Preço Contratual;
+7. Data de Publicação;
+8. Data de Celebração do Contrato;
+9. Prazo de Execução;
+10. Local de Execução;
+11. Fundamentação;
+12. Data de Fecho do Contrato;
+13. Preço Total Efetivo;Causas das Alterações ao Prazo;Causas das Alterações ao Preço;Estado;N.º registo do Acordo Quadro;Descrição do Acordo Quadro;invitees
+
+0 'FORNECIMENTO DE REFEIÇÕES  PARA O DIA MUNICIPAL DO IDOSO',
+1 'Ajuste directo',
+2 'Aquisição de serviços',
+3 '"55520000-1, Serviços de fornecimento de refeições (catering)"',
+4 'Município de Torres Novas (506608972)',
+5 '"O CASTELO DE ALCANEDE – EMP. TURÍSTICOS, LDA (501973710)"',
+6 '"28.490,00 €"',
+7 '16-10-2008',
+8 '02-10-2008',
+9 '1 dias (1 dia)',
+10 '"Portugal, Santarém, Torres Novas"',
+11 '"Artigo 20.º, n.º 1, alínea a) do Código dos Contratos Públicos"',
+12 '06-10-2008',
+13 '"28.490,00 €"',

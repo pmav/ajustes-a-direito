@@ -1,0 +1,12 @@
+cron
+  */5 * * * * sh /home/pi/ajustes-a-direito/producer.sh
+
+beanstalkd
+  sudo beanstalkd -l 127.0.0.1 -d -u beanstalkd -b /var/lib/beanstalkd/ -p 11300
+
+redis
+  src/redis-server redis.conf
+
+$ cat producer.sh
+  cd /home/pi/ajustes-a-direito/
+  /usr/local/bin/node src/producer.js

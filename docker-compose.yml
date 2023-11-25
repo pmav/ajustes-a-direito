@@ -1,0 +1,46 @@
+services:
+  
+  producer:
+    container_name: producer
+    hostname: producer
+    image: producer:v1
+    build: producer
+    depends_on:
+      - "redis"
+      - "beanstalkd"
+
+  publisher:
+    container_name: publisher
+    hostname: publisher
+    image: publisher:v1
+    build: publisher
+    depends_on:
+      - "redis"
+      - "beanstalkd"
+
+  redis:
+    container_name: redis
+    hostname: redis
+    image: redis:7.0.4-alpine
+
+  redis-commander:
+    container_name: redis-commander
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    restart: always
+    environment:
+    - REDIS_HOSTS=local:redis:6379:10
+    ports:
+    - "8081:8081"
+
+  beanstalkd:
+    container_name: beanstalkd
+    hostname: beanstalkd
+    image: schickling/beanstalkd
+
+#  beanstalkd-console:
+#    container_name: beanstalkd-console
+#    hostname: beanstalkd-console
+#    image: schickling/beanstalkd-console
+#    ports:
+#    - "2080:2080"
